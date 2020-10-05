@@ -82,9 +82,10 @@ int main()
                 printf("Enter the position you want to delete node from \n ");
                 scanf("%d",&pos);
                 if( pos == 1)
-                {
+                {   t = start;
                     start = start -> ptr;
-                }
+                    free(t);
+                }  
                 else
                 {
                     t1 = start;
